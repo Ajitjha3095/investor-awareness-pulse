@@ -1,0 +1,2300 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='investor_awareness_pulse_cleaned' inline='true' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='investor_awareness_pulse_cleaned' name='textscan.0qrjumg1jiowe81all1so10xsfyx'>
+            <connection class='textscan' directory='C:/Users/Admin/Desktop/Workspace/Neo4j Project/Investor Awareness Pulse/Data Set' filename='investor_awareness_pulse_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qrjumg1jiowe81all1so10xsfyx' name='investor_awareness_pulse_cleaned.csv' table='[investor_awareness_pulse_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='respondent_id' ordinal='0' />
+            <column datatype='date' name='survey_date' ordinal='1' />
+            <column datatype='integer' name='age' ordinal='2' />
+            <column datatype='string' name='gender' ordinal='3' />
+            <column datatype='string' name='education' ordinal='4' />
+            <column datatype='string' name='state' ordinal='5' />
+            <column datatype='string' name='area_type' ordinal='6' />
+            <column datatype='string' name='investment_info_source' ordinal='7' />
+            <column datatype='string' name='aware_of_event' ordinal='8' />
+            <column datatype='string' name='attended_event' ordinal='9' />
+            <column datatype='string' name='preferred_channel' ordinal='10' />
+            <column datatype='string' name='respondent_comment' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondent_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[respondent_id]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>respondent_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survey_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[survey_date]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>survey_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[education]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>education</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[area_type]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>area_type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>investment_info_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[investment_info_source]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>investment_info_source</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aware_of_event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[aware_of_event]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>aware_of_event</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attended_event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[attended_event]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>attended_event</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preferred_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[preferred_channel]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>preferred_channel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>respondent_comment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[respondent_comment]</local-name>
+            <parent-name>[investor_awareness_pulse_cleaned.csv]</parent-name>
+            <remote-alias>respondent_comment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aware Respondents' datatype='integer' name='[Calculation_0288675759730688]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+      </column>
+      <column caption='Awareness' datatype='real' default-format='p0.00%' name='[Calculation_0288675759796225]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_0288675759730688] / COUNTD([respondent_id])' />
+      </column>
+      <column caption='Attendance Conversion' datatype='real' default-format='p0.00%' name='[Calculation_0288675759894530]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; AND [attended_event] = &apos;Yes&apos; THEN [respondent_id] END) &#13;&#10;/ &#13;&#10;[Calculation_0288675759730688]' />
+      </column>
+      <column caption='Age Group' datatype='string' name='[Calculation_0288675760001027]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [age] &lt; 18 THEN &apos;Under 18&apos;&#13;&#10;ELSEIF [age] &gt;= 18 AND [age] &lt;= 24 THEN &apos;18-24&apos;&#13;&#10;ELSEIF [age] &gt;= 25 AND [age] &lt;= 34 THEN &apos;25-34&apos;&#13;&#10;ELSEIF [age] &gt;= 35 AND [age] &lt;= 44 THEN &apos;35-44&apos;&#13;&#10;ELSEIF [age] &gt;= 45 AND [age] &lt;= 54 THEN &apos;45-54&apos;&#13;&#10;ELSE &apos;55+&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([respondent_id])' />
+      </column>
+      <column caption='attended' datatype='integer' default-format='p0.00%' name='[Calculation_0288675761569797]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [attended_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+      </column>
+      <column caption='Event attendance' datatype='real' default-format='p0.00%' name='[Calculation_0288675761897478]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_0288675761569797]/[Calculation_0288675760054276]' />
+      </column>
+      <column caption='investor_awareness_pulse_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]' role='measure' type='quantitative' />
+      <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+      <column caption='Attended Event' datatype='string' name='[attended_event]' role='dimension' type='nominal' />
+      <column caption='Aware Of Event' datatype='string' name='[aware_of_event]' role='dimension' type='nominal' />
+      <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Investment Info Source' datatype='string' name='[investment_info_source]' role='dimension' type='nominal' />
+      <column caption='Preferred Channel' datatype='string' name='[preferred_channel]' role='dimension' type='nominal' />
+      <column caption='Respondent Comment' datatype='string' name='[respondent_comment]' role='dimension' type='nominal' />
+      <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Survey Date' datatype='date' name='[survey_date]' role='dimension' type='ordinal' />
+      <column-instance column='[attended_event]' derivation='None' name='[none:attended_event:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0ah9ocz0oyu8az13zp3az1q37hdv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/09/2026 03:00:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>respondent_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[respondent_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondent_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2500</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>survey_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[survey_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>survey_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>education</remote-alias>
+              <ordinal>4</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>5</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>area_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[area_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>area_type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>investment_info_source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[investment_info_source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>investment_info_source</remote-alias>
+              <ordinal>7</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>aware_of_event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[aware_of_event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>aware_of_event</remote-alias>
+              <ordinal>8</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attended_event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[attended_event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attended_event</remote-alias>
+              <ordinal>9</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>preferred_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[preferred_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>preferred_channel</remote-alias>
+              <ordinal>10</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>respondent_comment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[respondent_comment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>respondent_comment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>investor_awareness_pulse_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:attended_event:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#485968'>
+              <multibucket>
+                <bucket>&quot;No&quot;</bucket>
+                <bucket>&quot;[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764039688:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#485968'>
+              <multibucket>
+                <bucket>&quot;No&quot;</bucket>
+                <bucket>&quot;[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764076554:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b2c4cc'>
+              <multibucket>
+                <bucket>&quot;Yes&quot;</bucket>
+                <bucket>&quot;[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764039688:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#b2c4cc'>
+              <multibucket>
+                <bucket>&quot;Yes&quot;</bucket>
+                <bucket>&quot;[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764076554:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='investor_awareness_pulse_cleaned.csv' id='investor_awareness_pulse_cleaned.csv_5AE2BEF516CB435FB3951BEB0C850B39'>
+            <properties context=''>
+              <relation connection='textscan.0qrjumg1jiowe81all1so10xsfyx' name='investor_awareness_pulse_cleaned.csv' table='[investor_awareness_pulse_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='respondent_id' ordinal='0' />
+                  <column datatype='date' name='survey_date' ordinal='1' />
+                  <column datatype='integer' name='age' ordinal='2' />
+                  <column datatype='string' name='gender' ordinal='3' />
+                  <column datatype='string' name='education' ordinal='4' />
+                  <column datatype='string' name='state' ordinal='5' />
+                  <column datatype='string' name='area_type' ordinal='6' />
+                  <column datatype='string' name='investment_info_source' ordinal='7' />
+                  <column datatype='string' name='aware_of_event' ordinal='8' />
+                  <column datatype='string' name='attended_event' ordinal='9' />
+                  <column datatype='string' name='preferred_channel' ordinal='10' />
+                  <column datatype='string' name='respondent_comment' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+      <datasources>
+        <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+        <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+        <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+        <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]'>
+        <groupfilter function='level-members' level='[none:area_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]'>
+        <groupfilter function='level-members' level='[none:education:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Attendance Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Attendance Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column caption='Avg(0)' datatype='real' name='[Calculation_0288675764039688]' role='measure' type='quantitative' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='Avg(0)' />
+            </column>
+            <column caption='Avg(0)' datatype='real' name='[Calculation_0288675764076554]' role='measure' type='quantitative' user:unnamed='Sheet 7'>
+              <calculation class='tableau' formula='Avg(0)' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Attended Event' datatype='string' name='[attended_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[attended_event]' derivation='None' name='[none:attended_event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[pcto:usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0288675764039688]' derivation='User' name='[usr:Calculation_0288675764039688:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0288675764076554]' derivation='User' name='[usr:Calculation_0288675764076554:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764076554:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#eae6ff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:attended_event:nk]' />
+              <wedge-size column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764039688:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:attended_event:nk]' />
+              <wedge-size column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[pcto:usr:Calculation_0288675760054276:qk]' />
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.75762432813644409' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764076554:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:attended_event:nk]' />
+              <wedge-size column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+              <color column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.4640884399414062' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764039688:qk] + [federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675764076554:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A1B410B8-9E4E-43B6-934C-46892AF9B200}' />
+    </worksheet>
+    <worksheet name='Attended Among Aware'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Aware Respondents' datatype='integer' name='[Calculation_0288675759730688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+            </column>
+            <column caption='Attendance Conversion' datatype='real' default-format='p0.00%' name='[Calculation_0288675759894530]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; AND [attended_event] = &apos;Yes&apos; THEN [respondent_id] END) &#13;&#10;/ &#13;&#10;[Calculation_0288675759730688]' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Attended Event' datatype='string' name='[attended_event]' role='dimension' type='nominal' />
+            <column caption='Aware Of Event' datatype='string' name='[aware_of_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675759894530]' derivation='User' name='[usr:Calculation_0288675759894530:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759894530:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#232323' fontname='Tableau Semibold' fontsize='11'>Attended Among Aware</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='12'><![CDATA[<[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759894530:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9199EE48-C03D-4719-9C48-3BA7F45BA0DF}' />
+    </worksheet>
+    <worksheet name='Awareness Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Aware Respondents' datatype='integer' name='[Calculation_0288675759730688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+            </column>
+            <column caption='Awareness' datatype='real' default-format='p0.00%' name='[Calculation_0288675759796225]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0288675759730688] / COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Aware Of Event' datatype='string' name='[aware_of_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675759796225]' derivation='User' name='[usr:Calculation_0288675759796225:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#232323' fontname='Tableau Semibold' fontsize='11'>Awareness Rate</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='12'><![CDATA[<[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{85BB8995-8942-4177-AEF9-AF98BECBCEFD}' />
+    </worksheet>
+    <worksheet name='Awareness Rate by Education'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Awareness Rate by Education</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Aware Respondents' datatype='integer' name='[Calculation_0288675759730688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+            </column>
+            <column caption='Awareness' datatype='real' default-format='p0.00%' name='[Calculation_0288675759796225]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0288675759730688] / COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Aware Of Event' datatype='string' name='[aware_of_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675759796225]' derivation='User' name='[usr:Calculation_0288675759796225:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' field-type='quantitative' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='10' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='Tableau Semibold' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]' value='#000000' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='10' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#485968' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</rows>
+        <cols>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]</cols>
+      </table>
+      <simple-id uuid='{7083E6AD-FF90-4422-A03F-F52745062EE1}' />
+    </worksheet>
+    <worksheet name='Awareness Rate by Information Source'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Awareness Rate by Information Source</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Aware Respondents' datatype='integer' name='[Calculation_0288675759730688]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [aware_of_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+            </column>
+            <column caption='Awareness' datatype='real' default-format='p0.00%' name='[Calculation_0288675759796225]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0288675759730688] / COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Aware Of Event' datatype='string' name='[aware_of_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column caption='Investment Info Source' datatype='string' name='[investment_info_source]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[investment_info_source]' derivation='None' name='[none:investment_info_source:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675759796225]' derivation='User' name='[usr:Calculation_0288675759796225:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='10' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='10' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]' value='bold' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='bold' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#485968' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675759796225:qk]</rows>
+        <cols>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]</cols>
+      </table>
+      <simple-id uuid='{4E7506EC-03CC-45D1-9817-1D11DE5491DA}' />
+    </worksheet>
+    <worksheet name='Event attendance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column caption='attended' datatype='integer' default-format='p0.00%' name='[Calculation_0288675761569797]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [attended_event] = &apos;Yes&apos; THEN [respondent_id] END)' />
+            </column>
+            <column caption='Event attendance' datatype='real' default-format='p0.00%' name='[Calculation_0288675761897478]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation_0288675761569797]/[Calculation_0288675760054276]' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Attended Event' datatype='string' name='[attended_event]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675761897478]' derivation='User' name='[usr:Calculation_0288675761897478:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675761897478:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#232323' fontname='Tableau Semibold' fontsize='11'>Event attendance</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='12'><![CDATA[<[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675761897478:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F84574BD-A6DD-42D1-9BBB-319A800D70C6}' />
+    </worksheet>
+    <worksheet name='Preferred Outreach Channel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Preferred Outreach Channel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[preferred_channel]' derivation='None' name='[none:preferred_channel:nk]' pivot='key' type='nominal' />
+            <column caption='Preferred Channel' datatype='string' name='[preferred_channel]' role='dimension' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='10' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='Tableau Semibold' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]' value='10' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#485968' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]</rows>
+        <cols>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]</cols>
+      </table>
+      <simple-id uuid='{90E8E28F-3445-43CD-AE02-0C534AEE84AC}' />
+    </worksheet>
+    <worksheet name='Respondents'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#232323' fontname='Tableau Semibold' fontsize='11'>Respondents</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='12'><![CDATA[<[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E0F1386C-215F-4B34-81CF-64123AEF93EB}' />
+    </worksheet>
+    <worksheet name='Respondents by Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Respondents by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Age Group' datatype='string' name='[Calculation_0288675760001027]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [age] &lt; 18 THEN &apos;Under 18&apos;&#13;&#10;ELSEIF [age] &gt;= 18 AND [age] &lt;= 24 THEN &apos;18-24&apos;&#13;&#10;ELSEIF [age] &gt;= 25 AND [age] &lt;= 34 THEN &apos;25-34&apos;&#13;&#10;ELSEIF [age] &gt;= 35 AND [age] &lt;= 44 THEN &apos;35-44&apos;&#13;&#10;ELSEIF [age] &gt;= 45 AND [age] &lt;= 54 THEN &apos;45-54&apos;&#13;&#10;ELSE &apos;55+&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760001027]' derivation='None' name='[none:Calculation_0288675760001027:nk]' pivot='key' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='10' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='#000000' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]' value='10' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#485968' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]</rows>
+        <cols>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]</cols>
+      </table>
+      <simple-id uuid='{B050322C-545E-4C55-97D3-72E3F7B21461}' />
+    </worksheet>
+    <worksheet name='Respondents by Area Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='12'>Respondents by Area Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='investor_awareness_pulse_cleaned' name='federated.17tf44m1ktfpxe16h76qh1wxxhz1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17tf44m1ktfpxe16h76qh1wxxhz1'>
+            <column caption='Respondent' datatype='integer' name='[Calculation_0288675760054276]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([respondent_id])' />
+            </column>
+            <column caption='Area Type' datatype='string' name='[area_type]' role='dimension' type='nominal' />
+            <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+            <column-instance column='[area_type]' derivation='None' name='[none:area_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+            <column caption='Respondent Id' datatype='string' name='[respondent_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_0288675760054276]' derivation='User' name='[usr:Calculation_0288675760054276:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</column>
+            <column>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='bold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='10' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='bold' />
+            <format attr='font-family' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#485968' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675760054276:qk]</rows>
+        <cols>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</cols>
+      </table>
+      <simple-id uuid='{79053A48-55AD-41ED-BF3E-E26D06955029}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Respondents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F1CC46A9-1FF7-4018-B769-C593CA71AD12}' />
+    </window>
+    <window class='worksheet' name='Attended Among Aware'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{138C4F89-FEBA-4811-9A8B-21BFE870D5C5}' />
+    </window>
+    <window class='worksheet' name='Awareness Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9FEDAA89-22DE-4F99-A792-17BDFA74A99A}' />
+    </window>
+    <window class='worksheet' name='Event attendance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[usr:Calculation_0288675761897478:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.1052</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{C128FD71-FB93-43A6-B0FE-9E57CFCE9B3D}' />
+    </window>
+    <window class='worksheet' name='Respondents by Area Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{357AD0C7-490E-482C-8267-67734DB4ACD1}' />
+    </window>
+    <window class='worksheet' name='Awareness Rate by Information Source'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1831D960-8926-4429-9F12-51890FB585B9}' />
+    </window>
+    <window class='worksheet' name='Preferred Outreach Channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B4DBE617-E32D-4298-A3D0-6E03F4F6D4DB}' />
+    </window>
+    <window class='worksheet' name='Respondents by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:Calculation_0288675760001027:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:investment_info_source:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:preferred_channel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B7464C10-7309-4011-9635-DECEEC642C34}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Awareness Rate by Education'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:area_type:nk]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:education:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C7A99C6C-CDB4-4A6E-BD6E-1D5C97C22222}' />
+    </window>
+    <window class='worksheet' name='Attendance Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:attended_event:nk]&#10;[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[:Measure Names]</field>
+            <field>[federated.17tf44m1ktfpxe16h76qh1wxxhz1].[none:attended_event:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB809D28-1A30-4302-95BA-68DCA995F053}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Attendance Status' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Attended Among Aware' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEyElEQVR4nO3Yz2vbdRzH8VfWztofc6x2bbKt4HR2UOaPigpCdSBMoeJuIuwmyA4e9C/Q
+      ozjxopeyIW7gxapMPFhFEUGGE0tZG7vZNlvtkoYtTX8kTdOk+yb5eBYmeFoKr+fj+oUPn8/h
+      yefz/sZCCEGAqVZJqtVqiqKo2XsB7rlWSYqiSIVCodl7Ae65Xc3eANBMBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBIAdLT2fVDKVliQ16jXV6g1JQbUo
+      UqMR/tcaUXVdkxPXVLvLNwLAjhXurOncufP6bPSs1u80NPndpxr96heVyiV9fuZ9/Tyd0nZU
+      18b6im7lVhTVg7Y2iyoW1pXLryuEoK1SQZnFGX35xU+KGnWtLt/W8mpBIQRVy0W1NvuQwH9Z
+      y6QUiz+uY7WUUpmckleSurK6qIFEi6b+mtVs46L2xU7om7Fv1bsn6MDwKRV//UTpXQ9r4c85
+      vffRu7rwwRl1xbtV0n7dnPxBF8ZndN9mTidPv6Pxsx9yA2CnCpqb/kMry1ll8yuavJrRM88+
+      oaHjJ/Xy8WENHX1Ur556Qw9WbmoxX1SxvKXZ1IJiLbv12ptvayjepmx6Xi39w3rr9OvaK2ku
+      OaWNUlnV7U1NTPym7fuPEQB2plCPNJFMa2TkhF56ZUQLk5fV0R3XzKVx/X41q95Eu77/ekyF
+      toT6HmjXY08P6/knj/xrjc7uuIo3Lmvs4o8qSzo8cFQdHXv03Asv6qnBQVVXk4qFEEKlUlGh
+      UGjOSYG7CI26stkl9Sb61RoiZW7ndTDeo79T82rf/5B62mu6fiOj/oFBVfJp5QpbSvQfVqy6
+      ps6eQ9q4ldHexEGtLi1os9Gqzt2dOnCoW+nUvEpRTIcfOaJyPkMA8MYTCNb4CwRPIWi7WiIA
+      eMqlJvTx6HlmAHjaXMtpbvoSMwA8dXX3qW9fFwHA08rSdU1dWyAAeKqUCtpu62UGgDduAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFgjAFj7B1ElRS2sdMeRAAAAAElF
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Awareness Rate' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADy0lEQVR4nO3YPWudBRjG8StNrK2m1lJDKmJxEEQd6uIiOgguBRfdXPxQQr+AODo5CA4i
+      DqJW2/pW7XuxaRqTGnNqk56cnCTHryAiDeT6/fYH7mf4c9/PMzWZTCaBUjNJsr29nfF4vNez
+      wEM3kyTj8TiDwWCvZ4GH7sBeDwB7SQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQ
+      TQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUB
+      UE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1
+      AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRA
+      NQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AbBvrP95O9+c
+      +ymb451//YwA2De+/OTDnPngTC7cWstouJ7haDubG/fzYHOc0YP1bG5tZbB6N3eWVjIa72Q0
+      3MjMXg8N/4vJMD/+upr33n0t35+7lENXLuWr4cs5cvnjDJ5/O/NLX+Tkm+/n4tef596da3ns
+      1Dt56cFZG4D9YeP2xfy8sp7fbyzkh/Nnc/KFU7l77XwGB47n4N83cvnOVJ47cSijjXvZ3t3J
+      H4srmWQiAPaHX859l1feOJ3X3zqdubUrWZs9mdGtb3PgmVczu/pbNuZeTFau5ubybuafOpqp
+      JMlMpiaTyWQ4HGYwGOzxK8B/t7a8kMzO59jjB7OyeDOHjz+b9ZVbmTl6ItObqxlNH838kwdz
+      /eq1TB8+kkcPP5EjM1sCoJsTiGr+AlHp/tpyllYGAqDT2U8/ymdXd5xANNrN0tJSjs097SOY
+      Rru5fvFCFpb/sgFotJXFhbuZPnhIADR6JPNzs1lcuO0EopsNQDUBUE0AVBMA1QRANQFQTQBU
+      EwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0A
+      VBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBN
+      AFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQ
+      TQBUEwDVBEA1AVBNAFQTANUEQDUBUE0AVBMA1QRANQFQTQBUEwDVBEA1AVBNAFQTANUEQDUB
+      UO0fP8XU+iH+734AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Awareness Rate by Education' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Awareness Rate by Information Source' width='192'>
+      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
+      5CTYiBQFiy0cZ3PFGFu4HVt4y8TmgwJbGE5bGABmm63Vr7f805OICHsnrGzHkgB0I1m5+Rw/
+      WdTVq9FhZk9Lo0dsdKe+pgSgG8ktKOTTz0O3YFfq6GHtEgCf38/v3vh7m+aVAIiQo6oa2XkF
+      bZpXrgIJQ5MACEOTAAhDkwAIQ5MACEO7KAAaJ3IzOXgwk1pPgIrCYxwpOHN+qq/hHPv2Hcan
+      6rhrKjhw8Ah+Vae0MJ/qRj/euipq3FL+Q3QfrS+Dqi5efPpFxs6ag8OhsfKVdcRa3dT84Hmm
+      D3Twu2d+hjk+kY/3H0c7tZO4XjHs2NuXhvoAMYnxDLJbmHnr7V3UFCG+vtZ7AI+X2KQ+nCrI
+      o6LwODHjbuDOm8aQf7oCdJ2qWhPffvR+XNkH8Nr7cc89S6iuqiOKBtT6GvLPFPLmundoDOjY
+      bDZsNtv5ynBf9TBKZbirfZhN0k9teVit1ra/5oUj/oDOlOtv4NiODZTrMfgKM9hRXkn/OVP4
+      ZNsh4qItbHt/C9HDR6OXHWXn9j30GDyJh+YPZfPOPE6fzsCpn6XOoxJpbfoCnFSGa7/KcKom
+      /dQWgUDgyjM1axUAS2QsceEKExd/l+mTRjOml5NSbyRTR/elsNzDlO8/TnrmCZ5YOBu1Mp+D
+      +RX8x4yZmALVTJ4+haljEjlRbSHBKR8wi+6h1TvVZHMwffaN58eHp05jePPwCGfTz5t7pzQN
+      DBjBvAHN/0o0PJ5wgNiR9BzQsSssRHsK7YNKIa5AAiAMTQIgDE0CIAxNAiAMTQIgDE0CIAxN
+      AiAMTQIgDE0CIAxNAiAMTQIgDE0CIAxNAiAMTQIgDE0CIAxNAiAMTQIgDE0CIAxNAiAM7ZIA
+      qEEvp04U4guquMqLOHnm7Plpfk8tR3MLCGg6vgYXecdPEtB0qsrPUO8J4G+spcErleFE93FJ
+      /ZKc7e/y5KotPPebH/H6K2uwmYLc8ePnmdg3gtdf+gUuNQJr8nTU41vQrDZ6pIyhqrSKuP4D
+      GBQWIG3hbV3RDiH+La32AKq3io/2ljN9dCL1RblEjrmRe+aNJDu/FHSdorIAj/73gxTv/hyX
+      KYEHv3MHRQWFWHUvjWeLOVZaynvrP8ATlMpwF5LKcG3T5ZXh6sqLwKyRc/Qog6ZOxlNSQGZt
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Event attendance' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEIklEQVR4nO3Zy4uVdRzH8e8Zx3Gu3kZHvCA5MEIaIxFhYiCuaidRtOovaNlCatMmhDat
+      WxQRUULLFq6iQKhVBEWQOanleEtJ5zgXT3pm5mlZ7YpgDsPn9do9ix98n8Wb3+/3PK2maZqC
+      UP1VVcvLy9Xtdns9C6y5/qqqbrdb7Xa717PAmuv/+8Nia6S6rY29mgXW3D8C6LY21qPWYK9m
+      gTXX1+sBoJcEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRA
+      NAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEE
+      QDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDR
+      BEA0ARBNAEQTANEEQDQBEE0ARBMA0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQDQBEE0ARBMA
+      0QRANAEQTQBEEwDRBEA0ARBNAEQTANEEQLT+Xg8A/0d36V7NXrtZVVVjO/bVxI6t/25hs1rd
+      7ooAWN/aM1/Uu+99Xk8/9UQdePK5Gh6oGh7dUp2l+7VpaLQW5+7Ucm2q7ePbqrM0XyuPHtZy
+      32CNrM7W22+dFQDrXLNSA5t31oGpQzWxfaA+OHO6Tr12pj5753SdOPVCnTv3VY01c3XslTfq
+      6w9fr76tk3Vt9rd66cWTdf2X79wBWP+WHz6ohfv3qluDdXhyW/3wzZe1NDJdnWvf1/zCYj3o
+      LNTln3+tDWO76+VX36zdI3O1f/pY7do3LQDWvwftO3X18kzdvj1Xh44er/Nn36+pZ07U/qnD
+      NTQ8Wkeefb4en9pXrWr9tWhwWw0tXKxW0zRNp9Opdrtdc31b61FrsHdvAv9Rd+luXZ29UVVV
+      m3furx1jG+rSzMXaNXmktgy36salH2u+s1p7Jg/WH/O/1/aJvXX35pUa3ztV92/+JACyOQIR
+      zVcgMjVNLc7dEgCZLpz/pD796GMBkGni4PE6eWLGHYBM43sO1OjQgB2ARKt1/cK3dWX2lh2A
+      RE0t3LtdY48d9R+AbHYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIg
+      mgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgC
+      IJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBo
+      AiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmA
+      aAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaH8CtGzFZH7PqksAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Preferred Outreach Channel' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAASOUlEQVR4nO3deXCT953H8fcjPfIt29gy+CBgG9scDsYcocQEEkKAQMlFIGnaFNq0abI7
+      6Ww73Z3M/rE7mU5ndmbbze5s223akNCU4FAgxJwOhATKEW4bDIaAwRif+LZ8SNb1PPsHR/Am
+      znLKyL/va0bDI8lIPz3S57m/v59mmqaJEIrSAfx+P16vd6DbIkTQ6QBerxen0znQbREi6CwD
+      3QAhBpIEQChNAiCU4HK2Ul1TR6/P6PO4PkDtESKozpbuotrnoGvPERY+Mxettwc9IkYCINRg
+      mAZh4VFYtXZ2b1uLGXkfdjplE0ioQdOsxCc4mP/k44SHxzFzxnQsfjeaaZqmy+WSw6BiUGtr
+      rMYWl4Y9wkpdXQ1Jw9IwelokAEJtd2wTyGKRrSkReu7Ir1bTNAmACEl9jgKZhp+qitNEDstm
+      aAwc2bsHX/wIpmQ52LP3EBl500iL9rBrXym5D0znvqRYwsLCAFkDiNDUJwDu1lo+2b6RzMde
+      IbNzL+fcKTyYFcv+HRuIypjOx+uLiI91M2HqdLZu/JQfvfQMeL1omobVasXv9w/U5xDilvRZ
+      bEclpTNj8jgALpafo7nxAqsLi2jt7SU9M5shhocmn8norExsPR0EjK99TSFCRp8AdDZWc6S0
+      nLKSUlLz7icqLIpI3YIjMYHPtm+mLTKWsbERFG3eQcCRjC5bPSLE9TkM6nV10dTmBIvO0KEO
+      2i7VYYlOIDEmjIb6BuxJqcTYAtTWNZIwLA17pO3yi8gmkAhRd+Q8gARAhCqlrgW6XP2poWnX
+      3+/7vHblyavTV++LwUmRABhUnficlUUH+fvXf0Hi5SO3OOvL+c2b7/Pcz16n58RWig9U8NCC
+      5/FW7OLgmQYeemopcx/IQiIweCmyG2tQ3+Si5ovDeI0vH9v01w9xe5qpbW6kcPUm0rKyyUg0
+      KTpUw09//Ayb16/FL0e6BjVFAqBTMHsu8ZFfLsvbKvay65yHcG8XFy9W0eOCYfF+/uOPm5mf
+      G8M//uuvqW9zIX1mDG6KBMDN6t/+moMnK/jju6tZ+/Z/c86byqvLniIy3EZMbAqTc4dxYP9x
+      Eu8bjhYRR3qyg8fmzMGmyBxSlSJHgUx6XW78hoFmdrOp+ChLlizAqmn4PL1oehgYXjq73Nhj
+      Y/H39uD2mcTFxWK1yB7AYKZIAIT4egNyFKixuZX9JScG4q3vedkZI8jNyRzoZihjYALQ0sbG
+      7bsH4q3vefNnFUgAgkh28YTSJABCaRIAobSvBMDncdPrDVyZ7qHd2YNp+GmorcXtC2AaPupq
+      a/H45BSpCH19doJdTZX84Z0VTH3258zIjmPPxr9Q2p7BvHE+jtV56PGHkzukm1qXBZ8the89
+      NVNWISKk9QlAZFI68x+eSH3AoLWqjG77SOI6obqmhtkLX2Xnij9xuDfAa8uWsfJ/1uIzZmKP
+      uPmaYF1X5Bq8W2CxWGT+BFGfOa1pFrQr1z6eKS+nvraV4ye6iJ+eRHtnJz0axBgGbZ3d+MMj
+      sXB5bIGbPREmJ8z6ZxiGzJ8g6hOA1qpyDn/Rhj9iL4sWPU+BtZfjp1vIStPZXFxE/twnGRvv
+      Zv2mT3hw3uNSEilCXp8AJKbnsvSl3OsesTEhzw7A8y/+4NqjS5eNCkbbhLjrZBkulCYBEEqT
+      AAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkAhNIkAEJpEgChNAmAUFqfegDD
+      18OmdWvImrmYFP8FNu48Srgjk3l5DtZt2UV6/mzyHZ2s2X6EiTPmU5CXIX3ni5DWJwCerk5i
+      YnUaOj1kZ+Tw3LMpvLViPftcMO87L/NZ4QrORhi89KMXKFyxlan3ZxCuW64NlH2jdcEypnD/
+      ZNDx4OozpyMTUkgdEgNAoKeRle9v4NuLnsVqBNAtFmwG+DDRrVYs/gAmyDBCIqR9pSZ4x55S
+      nHYvWlIr7f5wjhwqZUrOGD4qXI59eBZzE3p46+1CksdMxqZBIBC4FgDDuLG+gm7071RkmqbM
+      nyD6Sk3wT1//5bX7s697LitvJhZdRwNGT/djterIgl+EuhvugMZ6XV810m+NGCxkb0soTQIg
+      lCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkAhNIkAEJpXwmAaRoY
+      polpmvj9PgzjyrTPd+1x35VpIUJdnwv7vZ2XeO+99xi/4CdkmWcp3HqEqJRsZueEU7zvFLHD
+      7yff0cnfjl0kbcw0nnp0khTFi5DWd5xgWwz5uek4vQFOHTnO48v+jj0r/8ChgIUnv/cyO/+y
+      nE+bDV59+UVWvrUe3yOTiLmVgbKtUlDTHxkoO7j6zGlbZAwxEWE4AVs4uNwe/FYr4RbweL0E
+      sKDjp9frQ9PDgVscKDsgA0H3RwbKDq6vFMXvLa3CHWWwaPZMtm36C8mjJ1OQEcGmjatInfwg
+      E4a4WF1YxJgHH8Emu9AixGmmaZoulwun0/l/njK5up+raRqmaYKmoXG55wLQrhXF3+waoOx0
+      Bf+1/IM79RkGlfmzCliy8LGBboYyvmFjU+vT68P1ff9IP0BisJCNGKE0CYBQmgRAKE0CIJQm
+      ARBKkwAIpUkAhNIkAEJpEgChNAmAUJoEQChNAiCUJgEQSpMACKX1ezm0q62O3ftLiEnJYeLI
+      aLbv/JyMvBmMinNR/LcSxk97hLEjkoLZViHuuH4D0Fx1grIvzmO91Iu7yknmxAXs37qRo9EG
+      j82dy9bNn5D9yneJCr+FmmCpee2X1AQHV79zuqGyhhnPvMiRjR/gstuItscRjobbDBAXH0eY
+      qWGat1gTLDWv/ZKa4ODqNwCjJk1h6+6tJGXnUTDewZZNhaRNfYgJQ1ys+WADY6c/ii57ECLE
+      9RuApMx8lmbkA5dLIJe9NO5aTfDL2ZMBTfoEEiFPaoKF0mQjRihNAiCUJgEQSpMACKVJAITS
+      JABCaRIAoTQJgFCaBEAoTQIglCYBEEqTAAilSQCE0iQAQmn9BsA0DRprKqm+1IZp+LhwroJu
+      TwDT8HK+4hxubyCY7RTirui3HqDl/AE2fN7I+PGjaT29k4rOCFr2lDF6SA9dehy7j11k2eLZ
+      WKQ0QISwfgNQvu9zOlyJnDx1jmGWRmYsfJWdK/5EmRHgtR8s4v3fr8Vngl2K4u8oKYoPrv5L
+      ItOSmZw6j7oda/Gm6jS3t9OlQawRoKnNiTciCqsmRfF3mhTFB1e/ARjz8LPUbSnivoJHKcgZ
+      wpYtWyl4YjE5cb18uGU3sxbOR5fNH3ETAgE/hmFisVqxWiz4vF70sDAwTdyuHsIiotCtwT0u
+      028ArLZI5j79wrX7i174/rXp7774wtf9FyG+gcnv3/gHmm3DKJj7HPFth/nd+lP8afm/sbfw
+      t+w904gRn8Mvf7YUaxB3LOUwqAgOs4OTx+twDM9ifFYKSVk5hHf2YAAznnmJpU/MoLO5BTPI
+      zZIAiOAwIvn5r95glF7Pb1duJysnmzDr5SV95YEN/O6jE/ziFz9BD/JhRQmACA5XC+++u4It
+      e08zKS+Ld/7zN1xoOsub//FnNm4ppqPlAn94dzX+QHDXAXK8TQSHfTj//uab+A2w6VaYPZEf
+      /fzqkz8YsGZJAETQaBYrtntsm0MCoJhVHxXj7Owe6GbcMyQAijnxxTmaWtoHuhn3jHtshSRE
+      cEkAhNIkAEJpEgChNAmAUJoEQChNAiCUJgEQSuv/RJhpUr5/E4frE1gwMZr12/aRljuD/MQu
+      inYdJ3faHGZNyZGB8kRI63cN4OlsoPxCC73Obo4ePciCF16h9cQBig6W8eOXv0floUP4DLBa
+      rVitViwWy7Xp/+9msViD+RlDytXy0rt1QxZZffS7Bti9YRUVTRq1F+qJfzABTQOrqRHg8pdk
+      MS5ftmqaX/5rGMYNvenV/yO+3o3OR3H7+g3AnKX/xBxPExu2VzIxI8Cm1e8wZFQu307o4e13
+      VjMi71vYLJe/LE3T0DTthn/YpilfcH9M07zLCwhZ+Fzvmy+GCx/KU08MBeCVsdOwWK1oQOYD
+      ASwWq6xMRci74atBL28/fnVaiFAmh0GF0iQAQmkSAKE0CYBQmgRAKE0CIJQmARBKkwAIpUkA
+      hNIkAEJpEgChNAmAUJoEQChNAiCU9o0DZbt6uvH4ApimQXdXF/6AgWkadHV24TeksEKEvn7r
+      AZorS/mspJJGZ4B5+Q72HK/BFj+CvMQuSipbiUsbz+J5U6UoRoS0ftcAjvQJPDI5C38gwPlz
+      FSxYshS9roLd5+tY+v0ldJ49hc+AsLAwbDYbuq7f1E18vasDZd+tmyaLrD76/SW2nD9E0YFW
+      Xv3h8+wrWk6P241X04gwTbrdHkxbBBoyUPaddrcHyjalJriPfgPQ3tKB5mulaPNO5kyfxcdb
+      V5NRMIvxQ1ysX7OZ3Jmz0WUXWoS4fgMwumABowu+vL/0h6OvTf84M/+uNkqIYJFluFCaBEAo
+      TQIglCYBEEqTAAilSQCE0iQAQmkSAKE0CYBQmgRAKE0CIJR20wEwA72UHD5CV69c0SlC300H
+      YMtf/0xHbxeFaz4mIFfWihB30wFo8QaYUfAAYR3N+GWoLxHibjoAsZqFslMVeO3xWGUPQoS4
+      m/4JP/HsEpxN7Sx8cg66VNeJEHfTxbm2GAePzn702v2rQ6Revd3Qa9hsxMZE3+xbKyEiIvyG
+      5+OtsEdH09vrvWuvH2o00zRNl8uF0+m8pRfQdf2ma4LFnaPrusz323Db3TP4/f5rg2TLFxF8
+      mqbJfL8Nd2Q3Vn78A8fn8w10E0Ka9Y033njD5/Ph8XgGui23zPQ6WfPnd/jk8zNkjx9L5JXu
+      Kq7fli77dC1feIeS7ri67+Hmj8sLmTIpH29XPavWbmNkVg5tlSVsOVhBbnY6XOlCRNM0CLhZ
+      /X4hVk8zB6p8jB7hCO6HvEdVn9zH6o+KKTtZS07+GMK+4W+L1yzHEh7D2u2lTLk/k0BvGyvf
+      fovjdR4mjElHA84c3sGKwvV4I4bSU3WA47V+Rg2PZdu6NfTah9NRsZ8V76/DHTGUjNTE2+7l
+      aFD0UFVT8jGnjZG8tmgKuuFiw6p11HuieOH5Jzm4rYh2HExKH0pSjM6nG9dwrqGbx5c8SVV1
+      DQBeZzUfr9vA8Lxv0XWgmM8qIpg3MYWirTtJyp7K9Kxw1hTtoOxMLdOmTsRhxHLwkw8pPd/G
+      wwsXM3b4kAGeAwOn8uR+4sd9m1ljk3FdLGP9ZyU4XT4S7QbR6dPJibjE30rOM37GfFKS04ix
+      Baiqawag80IptZZRaOX78Tz9CBFA4Qcf8uLrvyLGNChe/TnHOk4yLf1xduzeQa5jLF+s38pr
+      //LPWO/QSdhBsQaISkihrvQz1m/bR6o9wJGWITzkuMT6PeU0+RP5/tMPU7V3A/Ux49A7a6k9
+      XUKtlkx77QUemzUTb2ctZ6qd+Cw6nl4nfq8FX/1RarVkjmzfTn3DefLnPo3zwhlGJOgcuRRB
+      sq2dmqpyTrRH8VBexkDPggFTdXwX2w6cpbXdzTC9kVMdSVB3mLx5c/hk3V4mjEmkpq6GveX1
+      6A2lxGVMoKziEo8VjKfb2cimNatIG5cPejwjhsXhiDZZu+oDmq3J0H6RhGgbde2QaDcxEyew
+      IC+W91Z9QBtJ5Ofcx+0eMBsUp7Jaa6sZNnoKGXYPLb4w3C01XKhrY8TIdDqbLlJZVYvPhN72
+      evacrCInMw1/INDnNaJScvCUbyAydQoWIN6RRFRULM99ZzFxkRbqampxuq8cPvS1ULzzNOOy
+      M9BMxfd9NCsjs8YwLj0NA4iNTyA2xk6CIxEbbrYU7yVndDbhWuArfdKd3LeTiY8v5ujGNfTq
+      EYCH+lY/s2dP5cKpswDkTbmf4p0lZA1PhEAPNR0mc2Y8QGXlhTvSx91tHwa9F3i72zh67AR6
+      bAoTczOpPFlCiy+aqZPHUX+2jLpunZxUO2a0g0sVZQRsdhypafR2dTAqI51Ar5PaFi+6r5Xo
+      oem0NzUzPCWeY0dL0eypjB1pp7SsgjjHMDKS43AGInA1nMXpDyMpdTgjhyUM9CwYMO0NlZyq
+      bMCq2xk7JhmXLwJcrcSnJHOpupUws52aDoOkoUlE48buSOZSSzejRgzD293KgSNlpKZnYrNF
+      MzItgcryY1S3uMid9AD+jgbsjkQaalpJSQqji1jcl85R3dRN7sTJJMVG3nb7B0UAhLhVg2IT
+      SIhbJQEQSpMACKVJAITSJABCaRIAobT/BXO+4np7ur6cAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Respondents' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADOElEQVR4nO3XsWodZBjH4fdIrLbEakgitGCp4qCjBR072EUcvRDdRHRyEhc3R/EGBO/A
+      S3ASq0WDtTaVWpojNkR6Qo834KgN5Pc88zf8lx+832K9Xq8HojZmZo6Pj2e1Wp30FnjsNmZm
+      VqvVLJfLk94Cj90TJz0ATpIASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANI2TnoA/F9+2/txHjxcz/aFS7P77Ll/fSMA
+      Tq0vPvtozr9ybW589/289/Gnc3lzNff/PJqtnZ05sziee/cOBMDptXjy6bn29jvz6Pfrs79/
+      a77+6svZuvj8/HX25Xn97M355tdH/gCcXg8Pl/P5Jx/Mnc0rc2V3Ndf3787B/eX89PON2X3h
+      xTm8sycATq+nntmed9//cBb7384PBzOXd56bS6++Nm9dfWMeHB3P1WtvzmK9Xq+Pjo5muVye
+      9F74T+3f2pvtCy/N3wf7czjnZnNxNL/cvjvndy/O1pnV3Lz9hwBocwKRJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIO0flUJwnpPQxxMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Respondents by Age Group' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Respondents by Area Type' width='192'>
+      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
+      YII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
