@@ -1,4 +1,12 @@
+<div align="center">
+
+<img width="738" height="506" alt="image" src="https://github.com/user-attachments/assets/ed1c76d2-e159-4029-b717-adff78f7e47a" />
+<img width="381" height="362" alt="image" src="https://github.com/user-attachments/assets/9c916649-202c-436c-974c-d8ed07409f87" />
+
+
 # Investor Awareness Pulse
+
+</div>
 
 ### Financial Education Analytics Portfolio Project
 
@@ -7,6 +15,20 @@ An end-to-end analytics project exploring awareness, attendance, and outreach pr
 > **Data notice:** All respondent records and results in this repository are synthetic and intended for portfolio demonstration only. They are not real survey findings, financial advice, or estimates of public awareness.
 
 **Suggested GitHub repository:** `investor-awareness-pulse`
+
+###  Data Sources → Extraction → Cleaning → Storage → Visualization → Graph DB  → Graph Query 
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-KPI%20Measures-5E5E5E?style=for-the-badge)
+![Data Modeling](https://img.shields.io/badge/Data%20Modeling-Relationships-2F855A?style=for-the-badge)
+![Looker Studio](https://img.shields.io/badge/Looker%20Studio-4285F4?style=for-the-badge)
+![Neo4j](https://img.shields.io/badge/Neo4j-Graph%20DB-008CC1?style=for-the-badge)
+![Cypher](https://img.shields.io/badge/Cypher-Query%20Language-2F855A?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
 
 ---
 
@@ -26,11 +48,12 @@ An end-to-end analytics project exploring awareness, attendance, and outreach pr
 12. [Neo4j Graph Model](#neo4j-graph-model)
 13. [Repository Structure](#repository-structure)
 14. [Run the Project](#run-the-project)
-15. [Data Quality and Limitations](#data-quality-and-limitations)
-16. [Skills Demonstrated](#skills-demonstrated)
-17. [Future Enhancements](#future-enhancements)
-18. [Author](#-author)
-19. [License](#license)
+15. [How to Run / Setup](#how-to-run--setup)
+16. [Data Quality and Limitations](#data-quality-and-limitations)
+17. [Skills Demonstrated](#skills-demonstrated)
+18. [Future Enhancements](#future-enhancements)
+19. [Author](#author)
+20. [License](#license)
 
 
 ---
@@ -45,6 +68,15 @@ An end-to-end analytics project exploring awareness, attendance, and outreach pr
 | **Dataset** | 2,500 synthetic survey records; 12 fields |
 | **Tools** | Python, pandas, Jupyter Notebook, Power BI, Tableau, Looker Studio, Neo4j, Cypher, Git/GitHub |
 | **Repository** | `investor-awareness-pulse` |
+
+
+
+| Platform | Link |
+|---|---|
+| Power BI | See `/Dashboard` folder (`.pbix` file) |
+| Tableau Public | [Investor Awareness Pulse](https://public.tableau.com/app/profile/ajit.jha/viz/InvestorAwarenessPulse/Dashboard1)|
+| Looker Studio | [Live Report](https://datastudio.google.com/s/uFtwNxQokJA)|
+| GitHub Repo | [investor-awareness-pulse](https://github.com/Ajitjha3095/investor-awareness-pulse) |
 
 ## Business Problem
 
@@ -177,8 +209,8 @@ Format the three rate measures as percentages with one decimal place. Review the
 The project uses a single-page dashboard approach with KPI cards, area and education comparisons, source/channel charts, and attendance status.
 
 - **Tableau Public:** [Investor Awareness Pulse](https://public.tableau.com/app/profile/ajit.jha/viz/InvestorAwarenessPulse/Dashboard1?publish=yes)
-- **Power BI:** Single-page report built for the project; add the published report URL or `.pbix` asset when sharing it publicly.
-- **Looker Studio:** Report built for the project; add its share URL when available.
+- **Power BI:** [See `investor-awareness-pulse/Dashboard` folder (`.pbix` file)]
+- **Looker Studio:** [Investor Awareness Pulse](https://datastudio.google.com/s/uFtwNxQokJA).
 
 
 ## Neo4j Graph Model
@@ -209,8 +241,7 @@ Investor Awareness Pulse/
 │   
 ├── Jupyter Notebook/
 │   └── clean_investor_awareness.ipynb
-│   └──Cleaned csv
-│
+│   
 ├── Dashboard/
 │   └── Investor Awareness Pulse.pbix
 │   └── Investor Awareness Pulse.twbx
@@ -218,12 +249,13 @@ Investor Awareness Pulse/
 ├── neo4j/
 │   ├── queries/
 │   └── graph_screenshot.png
+│   └── neo4j_graph.png
 │
 ├── screenshot/
-│   ├── powerbi_dashboard.png
-│   ├── tableau_dashboard.png
-│   ├── looker_dashboard.png
-│   └── neo4j_graph.png
+│   ├── powerbi_dashboard.jpg
+│   ├── tableau_dashboard.jpg
+│   ├── looker_dashboard.jpg
+│   
 │
 └── README.md
 │
@@ -249,7 +281,7 @@ python generate_investor_awareness_pulse_data.py
 
 ### Build the BI reports
 
-Import `investor_awareness_pulse_CLEANED_FIXED.csv` into Power BI, Tableau, or Looker Studio. Set `survey_date` to a Date type, `age` to a Whole Number, and ID/category fields to Text. See the Power BI build guide for measures and layout.
+Import `investor_awareness_pulse_cleaned` into Power BI, Tableau, or Looker Studio. Set `survey_date` to a Date type, `age` to a Whole Number, and ID/category fields to Text. See the Power BI build guide for measures and layout.
 
 ### Load the graph in Neo4j Desktop
 
@@ -263,6 +295,31 @@ Follow `neo4j_step5/README.md`. The scripts are written for the generic workshop
 - `respondent_comment` is generated example text and should not be treated as qualitative research evidence.
 - The dataset is useful for practising data cleaning, dashboards, and graph queries, but not for investment decisions or public-policy conclusions.
 
+
+##  How to Run / Setup
+
+You can set up and run this project locally on your system using any of the options below:
+
+###  Option 1: Direct Download (Easiest)
+If you do not have Git installed, you can download the project as a ZIP file:
+1. Scroll to the top of this GitHub repository page and click the green **Code** button.
+2. Select **Download ZIP** from the dropdown menu.
+3. Once downloaded, extract (unzip) the file to a folder on your computer.
+
+---
+
+###  Option 2: Clone the Repository (Recommended)
+If you have Git installed, open your Terminal or Command Prompt (CMD) and run the following commands:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com
+
+# 2. Navigate into the project directory
+cd investor-awareness-pulse
+```
+
+---
 ## Skills Demonstrated
 
 - Synthetic survey-data generation and data-quality design
@@ -281,7 +338,7 @@ Follow `neo4j_step5/README.md`. The scripts are written for the generic workshop
 - Add a feedback loop to measure whether targeted outreach improves attendance.
 - Publish the Power BI and Looker Studio share links alongside the Tableau report.
 
-# 👤 Author
+#  Author
 
 **Ajit Jha**
 
@@ -293,7 +350,7 @@ Analytics Professional | Research & Business Intelligence
 
 ---
 
-⭐ **If you find this project useful, feel free to explore the dashboards, data model, and Neo4j graph implementation.**
+**If you find this project useful, feel free to explore the dashboards, data model, and Neo4j graph implementation.**
 - **GitHub:** [Ajitjha3095](https://github.com/Ajitjha3095)
 - **LinkedIn:** [Ajit Jha](https://www.linkedin.com/in/ajitjha01/)
 
